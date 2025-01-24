@@ -35,7 +35,7 @@ By default, the tool will collect workflow variables from the current branch in 
 You can supply the `--from-branch` flag to specific a different branch.
 
 Finally, if you give the `--pull-request` flag, the command will push any changes to the remote and attempt to create a pull request using the GitHub API.
-The GitHub username and repository name will be fetched from the remote url (see `git remote -v | grep origin`), or can be supplied with `--username` and `--github-repository`.
+The GitHub username and repository name will be fetched from the remote url (see `git remote get-url origin`), or can be supplied with `--username` and `--github-repository`.
 
 To create the pull request, a personal access token is required for API authentication.
 These can be created at [https://github.com/settings/tokens](https://github.com/settings/tokens).
